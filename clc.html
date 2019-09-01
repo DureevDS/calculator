@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+<title>Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item_title">Calculator</div>
+            <div class="item_mem">Memory</div>
+            <div class="cont-1">                
+                <div class="disp">
+                    <form name="form1"><input type="text"
+                    name="textview1" placeholder="0" readonly></form>
+                    </div>
+                <div class="disp">
+                    <form name="form2"><input type="text"
+                    name="textview2" placeholder="0" readonly></form>
+                    </div>
+                <div class="cont-3">
+                    <div class="cont-5x5">
+                        <div class="item invisible"></div>
+                        <div class="item invisible"></div>
+                        <div class="item invisible"></div>
+                        <div class="item invisible"></div>
+                        <div class="item invisible"></div>
+                        <div class="item invisible"></div>
+                        <div class="item empty">lnv</div>
+                        <div class="item empty">ln</div>
+                        <div class="item empty">(</div>
+                        <div class="item empty">)</div>
+                        <div class="item empty">lnt</div>
+                        <div class="item empty">sinh</div>
+                        <div class="item" onclick="sin()">sin</div>
+                        <div class="item empty">x&sup2;</div>
+                        <div class="item" onclick="factorial()">n!</div>
+                        <div class="item empty">dms</div>
+                        <div class="item empty">cosh</div>
+                        <div class="item" onclick="cos()">cos</div>
+                        <div class="item" onclick="xy()">x<sup><sup>y</sup></sup></div>
+                        <div class="item" onclick="yqx()"><sup><sup>y</sup></sup>&radic;x</div>
+                        <div class="item empty">&pi;</div>
+                        <div class="item empty">tanh</div>
+                        <div class="item" onclick="tan()">tan</div>
+                        <div class="item empty">x&sup3;</div>
+                        <div class="item empty">&sup3;&radic;x</div>
+                        <div class="item empty">F-E</div>
+                        <div class="item empty">Exp</div>
+                        <div class="item empty">Mod</div>
+                        <div class="item empty">log</div>
+                        <div class="item empty">10<sup><sup>x</sup></sup></div>
+                        </div>
+                    <div class="cont-4x6">
+                        <div class="item" onclick="MC()">MC</div>
+                        <div class="item" onclick="MR()">MR</div>
+                        <div class="item" onclick="MS()">MS</div>
+                        <div class="item invisible"></div>
+                        <div class="item invisible"></div>
+                        <div class="item empty">CE</div>
+                        <div class="item" onclick="clean()">C</div>
+                        <div class="item" onclick="plusmn()">&plusmn;</div>
+                        <div class="item" onclick="insert('7')">7</div>
+                        <div class="item" onclick="insert('8')">8</div>
+                        <div class="item" onclick="insert('9')">9</div>
+                        <div class="item" onclick="insert('/')">/</div>
+                        <div class="item" onclick="insert('4')">4</div>
+                        <div class="item" onclick="insert('5')">5</div>
+                        <div class="item" onclick="insert('6')">6</div>
+                        <div class="item" onclick="insert('*')">*</div>
+                        <div class="item" onclick="insert('1')">1</div>
+                        <div class="item" onclick="insert('2')">2</div>
+                        <div class="item" onclick="insert('3')">3</div>
+                        <div class="item" onclick="insert('-')">-</div>
+                        <div class="item zero" onclick="insert('0')">0</div>
+                        <div class="item" onclick="insert('.')">.</div>
+                        <div class="item" onclick="insert('+')">+</div>
+                        </div>
+                    <div class="cont-1x4">
+                        <div class="item invisible"></div>
+                        <div class="item empty">&radic;</div>
+                        <div class="item empty">%</div>
+                        <div class="item empty">1/x</div>
+                        <div class="item equally" onclick="equal()">=</div>
+                        </div>
+                    </div>
+                <div class="cont-4">
+                    <div class="item_log">Log</div>
+                    <div class="disp_log">
+                        <form name="log">
+                            <textarea rows="17" cols="61" name="text" readonly></textarea>
+                        </form>
+
+                        <!-- <textarea type="text"
+                        name="textview3" placeholder="0"></textarea> -->
+                        </div>
+                    <div class="cont-5">
+                        <div class="item invisible"></div>
+                        <div class="item invisible"></div>
+                        <div class="item clear" onclick="f_clear()">Clear</div>
+                        <div class="item save_as" onclick="f_save_as()">Save As...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script src="script.js">
+</script>
+    </body>
+</html>
